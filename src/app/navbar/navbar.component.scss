@@ -1,0 +1,36 @@
+
+@import "src/styles";
+
+.navbar-container {
+  padding: 32px;
+  width: $screen-width;
+}
+
+.navbar-title {
+  font-size: 32px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.category-button {
+  color: #222222;
+  background: white;
+  padding: 8px;
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family:  'Roboto Mono', monospace;
+}
+
+.category-button:hover {
+  background: rgba(255,255,255,.9);
+  transform: scaleX(1.05);
+}
+
+@media screen and (max-width: $screen-width) {
+  .navbar-container {
+    width: 100vw
+  }
+}

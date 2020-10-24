@@ -1,0 +1,69 @@
+@import "src/styles";
+
+.main-container {
+  color: #222222;
+  margin-top: 0;
+  width: $screen-width;
+}
+
+
+.right-container {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: right;
+}
+
+.left-container {
+  padding: 64px 64px 64px 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  font-size: 64px;
+  color: white;
+}
+
+.name {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-msg {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.img-large {
+  height: 400px;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.img-small {
+  height: 400px;
+  object-fit: cover;
+  margin-left: auto;
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  opacity: 0;
+}
+
+
+
+@media screen and (max-width: 1279px){
+
+  .main-container {
+    width: 100%;
+  }
+
+  .img-large {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  .img-small{
+    opacity: 1;
+  }
+}
