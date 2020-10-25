@@ -1,10 +1,18 @@
+@import "src/styles";
 a{
-  color: orangered;
+  color: $primary-color;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  margin-top: 0;
 }
 a:hover {
-  color: orangered;
+  color: $primary-color;
   opacity: .9;
+}
+
+@media screen and (max-width: 650px) {
+  a{
+    margin-top: 16px;
+  }
 }

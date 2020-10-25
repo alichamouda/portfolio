@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 import {FlexModule} from "@angular/flex-layout/typings/flex";
 import { SocialMediaLinksComponent } from './social-media-links/social-media-links.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -16,12 +17,13 @@ import { SocialMediaLinksComponent } from './social-media-links/social-media-lin
     MainContainerComponent,
     SocialMediaLinksComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NoopAnimationsModule,
-    FlexModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NoopAnimationsModule,
+        FlexModule,
+        MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

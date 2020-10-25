@@ -11,26 +11,82 @@
   font-family: 'Roboto Mono', monospace;
 }
 
-.category-button {
-  color: #222222;
-  background: white;
-  padding: 8px;
-  font-size: 16px;
+
+.category-icon {
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 32px;
+  margin-left: 32px;
+  height: 48px;
+  width: 48px;
   cursor: pointer;
-  font-family:  'Roboto Mono', monospace;
+  transition: all .4s ease-in-out;
+  background-color: $primary-color;
+  border-radius: 50%;
 }
 
-.category-button:hover {
-  background: rgba(255,255,255,.9);
-  transform: scaleX(1.05);
+.category-icon:hover {
+  color: #fafafa;
+  transform: translateY(-4px) scale(1.2,1.2);
+  cursor: pointer;
 }
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  text-transform: uppercase;
+  font-weight: 600;
+  visibility: hidden;
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+  padding: 4px 12px;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 100;
+  top: 64px;
+  right: 0;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 18px;
+  transform: rotate(180.0deg);
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $primary-color transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 @media screen and (max-width: $screen-width) {
   .navbar-container {
     width: 100vw
   }
+}
+
+@media screen and (max-width:650px) {
+
 }

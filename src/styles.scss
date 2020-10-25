@@ -1,18 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400;1,700&display=swap');
 $screen-width: 1250px;
-$color: rgb(255,69,00);
+$primary-color: rgb(255,69,00);
+$secondary-color: rgb(20,50 ,200);
 
 html, body {
   min-height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6{
+h4,h5,h6{
   font-family: Lato, "Helvetica Neue", sans-serif;
 }
 
 h1,h2,h3{
   font-family: "Roboto Mono", sans-serif;
+}
+
+h1 {
+  font-size: 128px;
+  line-height: calc(128px*1.616);
+  color: #101010;
+}
+h2 {
+  font-size: 64px;
+  line-height: calc(64px*1.616);
+  color: #101010;
+}
+h3 {
+  font-size: 32px;
+  line-height: calc(32px*1.616);
+  color: #101010;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: calc(24px*1.616);
+  color: #101010;
+}
+h5 {
+  font-size: 128px;
+  line-height: calc(128px*1.616);
+  color: #101010;
+}
+h6 {
+  font-size: 128px;
+  line-height: calc(128px*1.616);
+  color: #101010;
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 64px;
+    line-height: calc(64px*1.616);
+    color: #101010;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: calc(32px*1.616);
+    color: #101010;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: calc(24px*1.616);
+    color: #101010;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: calc(16px*1.616);
+    color: #101010;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: calc(12px*1.616);
+    color: #101010;
+  }
+  h5 {
+    font-size: 8px;
+    line-height: calc(8px*1.616);
+    color: #101010;
+  }
 }
 
 body {
@@ -47,17 +114,17 @@ div {
 
 .underline::after {
   content: "";
-  background: $color;
-  height: 16px;
+  background: $primary-color;
+  height: 24px;
   width: 100%;
   position: absolute;
   z-index: -1;
-  bottom: 20px;
+  bottom: 24px;
   left: 0;
 }
 
 .dot-marker {
-  color: $color;
+  color: $primary-color;
   line-height: 5px;
   font-size: 128px;
   height: 10px;
