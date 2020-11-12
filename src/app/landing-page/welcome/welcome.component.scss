@@ -1,0 +1,13 @@
+@import "src/styles";
+
+.welcome-container {
+  background-color: $primary-color;
+  width: $screen-width;
+  padding: 32px;
+  position: relative;
+  color: $shade-one;
+}
+
+.button-container {
+  margin-bottom: 64px;
+}

@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { MainComponent } from './main/main.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
+import { GeneralPresentationComponent } from './general-presentation/general-presentation.component';
+
+
+
+@NgModule({
+  declarations: [NavBarComponent, WelcomeComponent, MainComponent, GeneralPresentationComponent],
+  exports: [
+    MainComponent
+  ],
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+  ]
+})
+export class LandingPageModule { }

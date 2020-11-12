@@ -1,0 +1,36 @@
+@import "src/styles";
+
+.nav-bar-container {
+  width: $screen-width;
+  padding: 32px;
+  margin-top: 8px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: $primary-color;
+}
+
+.nav-bar-logo {
+  height: 40px;
+  padding-right: 10px;
+}
+
+.nav-bar-icon {
+  cursor: pointer;
+  height: 24px;
+  padding-right: 10px;
+  opacity: 1;
+}
+
+.nav-bar-icon:hover {
+  opacity: .5;
+}
+
+.right-nav-bar-section {
+  font-size: 32px;
+  font-weight: bold;
+  color: $shade-five;
+}
+
+.left-nav-bar-section {
+
+}
