@@ -5,6 +5,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { MainComponent } from './main/main.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { GeneralPresentationComponent } from './general-presentation/general-presentation.component';
+import {DevProjectsModule} from "../dev-projects/dev-projects.module";
 
 
 
@@ -13,9 +14,10 @@ import { GeneralPresentationComponent } from './general-presentation/general-pre
   exports: [
     MainComponent
   ],
-  imports: [
-    CommonModule,
-    FlexLayoutModule,
-  ]
+    imports: [
+        CommonModule,
+        FlexLayoutModule,
+        DevProjectsModule,
+    ]
 })
 export class LandingPageModule { }

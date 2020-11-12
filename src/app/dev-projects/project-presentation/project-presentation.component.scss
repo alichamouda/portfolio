@@ -1,21 +1,17 @@
 @import "src/styles";
 
-.general-presentation-container {
+.project-presentation-container {
   width: $screen-width;
   padding: 32px;
   border-style: solid;
+  //margin-top: 8px;
   border-width: 8px;
-  border-color: $primary-color;
-
+  border-top-width: 0;
+  border-color: $secondary-color;
+  display: flex;
 }
 
 .text-container {
   width: calc( #{$content-width} - 250px);
   margin-right: 50px;
 }
-
-img {
-  height: 250px;
-  border-radius: 50%;
-}
-

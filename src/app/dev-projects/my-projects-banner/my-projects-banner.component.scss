@@ -1,0 +1,16 @@
+@import "src/styles";
+
+.banner-container {
+  width: $screen-width;
+  background-color: $secondary-color;
+  justify-content: center;
+  text-align: center;
+  color: $shade_one;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  padding: 64px;
+  display: flex;
+}
