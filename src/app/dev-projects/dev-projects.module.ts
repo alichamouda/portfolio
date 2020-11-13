@@ -4,6 +4,7 @@ import { ProjectPresentationComponent } from './project-presentation/project-pre
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { AllProjectsComponent } from './all-projects/all-projects.component';
 import { MyProjectsBannerComponent } from './my-projects-banner/my-projects-banner.component';
+import {LayoutModule} from "../layout/layout.module";
 
 
 
@@ -14,9 +15,10 @@ import { MyProjectsBannerComponent } from './my-projects-banner/my-projects-bann
     AllProjectsComponent,
     MyProjectsBannerComponent
   ],
-  imports: [
-    CommonModule,
-    FlexLayoutModule
-  ]
+    imports: [
+        CommonModule,
+        FlexLayoutModule,
+        LayoutModule
+    ]
 })
 export class DevProjectsModule { }
