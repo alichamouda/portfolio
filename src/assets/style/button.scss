@@ -7,7 +7,7 @@ button {
   margin: 0;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1;
   cursor: pointer;
   text-align: center;
@@ -17,6 +17,15 @@ button {
   -moz-appearance: none;
 
 }
+
+
+@media screen and (max-width: #{$screen-width-sm}){
+  button{
+    font-size: 12px;
+    padding: 16px;
+  }
+}
+
 
 button:hover,
 button:focus {

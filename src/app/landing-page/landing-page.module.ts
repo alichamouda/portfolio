@@ -7,11 +7,14 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import { GeneralPresentationComponent } from './general-presentation/general-presentation.component';
 import {DevProjectsModule} from "../dev-projects/dev-projects.module";
 import {LayoutModule} from "../layout/layout.module";
+import {CertificatesModule} from "../certificates/certificates.module";
+import {VolunteeringModule} from "../volunteering/volunteering.module";
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [NavBarComponent, WelcomeComponent, MainComponent, GeneralPresentationComponent],
+  declarations: [NavBarComponent, WelcomeComponent, MainComponent, GeneralPresentationComponent, FooterComponent],
   exports: [
     MainComponent
   ],
@@ -20,6 +23,8 @@ import {LayoutModule} from "../layout/layout.module";
         FlexLayoutModule,
         DevProjectsModule,
         LayoutModule,
+        CertificatesModule,
+        VolunteeringModule,
     ]
 })
 export class LandingPageModule { }

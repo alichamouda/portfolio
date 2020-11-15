@@ -1,0 +1,11 @@
+@import "src/styles";
+.all-cards-container{
+  width: $screen-width;
+  padding-top: 8px;
+}
+
+@media screen and (max-width: #{$screen-width}){
+  .all-cards-container{
+    width: 100vw;
+  }
+}

@@ -1,0 +1,10 @@
+<div fxLayout="row wrap" fxLayoutAlign="stretch" class="all-cards-container">
+  <app-volunteering-card [activity]="activity" *ngFor="let activity of volunteeringActivities;let i=index"
+                         [ngStyle.gt-sm]="{'margin-right':i%3!==2 ? '8px':'0','margin-left':i%3!==0 ? '8px':'0'}"
+                         [ngStyle.lt-md]="{'margin-right':i%2!==1 ? '8px':'0','margin-left':i%2!==0 ? '8px':'0'}"
+                         [ngStyle.xs]="{'margin-right':'0','margin-left':'0'}"
+
+  ></app-volunteering-card>
+</div>
+
+

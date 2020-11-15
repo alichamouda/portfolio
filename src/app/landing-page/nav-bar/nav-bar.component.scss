@@ -7,6 +7,23 @@
   border-style: solid;
   border-width: 8px;
   border-color: $primary-color;
+  display: flex;
+}
+
+@media screen and (max-width: #{$screen-width}){
+  .nav-bar-container {
+    width: 100vw;
+    margin-top: 0;
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: #{$screen-width-sm}){
+  .nav-bar-container {
+    width: 100vw;
+    margin-top: 0;
+    padding: 16px;
+  }
 }
 
 .nav-bar-logo {

@@ -1,0 +1,16 @@
+<div class="volunteering-card" fxLayout="column" fxLayoutAlign="space-between start">
+  <div style="height: 50px;display: flex">
+    <h4 style="line-height: 24px">
+      {{activity.mission}}
+    </h4>
+  </div>
+  <div  style="height: 32px;margin-top: 16px;display: flex">
+    <h5 style="line-height: 16px">
+      {{activity.clubName}}
+    </h5>
+  </div>
+
+  <div class="highlight-shade-one">
+    {{activity.startMonth.slice(0,3) + " " + activity.startYear}} - {{ activity.endMonth.slice(0,3) + " " + activity.endYear}}
+  </div>
+</div>

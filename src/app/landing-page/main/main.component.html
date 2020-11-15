@@ -1,9 +1,14 @@
 
-<div style="width: 100%;" fxLayout="column" fxLayoutAlign="stretch center">
+<div style="width: 100vw;" fxLayout="column" fxLayoutAlign="stretch center">
   <app-nav-bar></app-nav-bar>
   <app-welcome></app-welcome>
   <app-general-presentation></app-general-presentation>
-  <app-my-projects-banner></app-my-projects-banner>
+  <app-abstract-banner [color]="'secondary-color'" [title]="'My Software Projects'" [hasCheckAllButton]="true" ></app-abstract-banner>
   <app-all-projects></app-all-projects>
+  <app-abstract-banner [color]="'fourth-color-second'" [title]="'My Certificates'" [hasCheckAllButton]="true" ></app-abstract-banner>
+  <app-all-certificates></app-all-certificates>
+  <app-abstract-banner [color]="'third-color'" [title]="'Volunteering'" [hasCheckAllButton]="true" ></app-abstract-banner>
+  <app-all-volunteering-cards></app-all-volunteering-cards>
+  <app-footer></app-footer>
 </div>
 

@@ -1,0 +1,44 @@
+@import "src/styles";
+.volunteering-card {
+  background-color: $accent-color;
+  padding: 32px;
+  color: white;
+  width: calc((#{$screen-width}  - 8px*4)/3);
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+h4, h5{
+  margin: 0;
+  color: white;
+}
+
+.highlight-shade-one{
+  margin-top: 16px;
+  color: $accent-color;
+  font-weight: 600;
+}
+
+
+h4{
+  margin: 0;
+}
+
+@media screen and (max-width: #{$screen-width}){
+  .volunteering-card{
+    width: calc((100vw - 8px*4)/3);
+  }
+}
+
+@media screen and (max-width: 959px){
+  .volunteering-card{
+    width: calc((100vw - 8px*2)/2);
+  }
+}
+
+@media screen and (max-width: 600px){
+  .volunteering-card{
+    width: calc((100vw ));
+    padding: 16px;
+  }
+}

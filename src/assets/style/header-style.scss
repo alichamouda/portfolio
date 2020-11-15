@@ -1,8 +1,4 @@
-h4,h5,h6{
-  font-family: "Montserrat", sans-serif;
-}
-
-h1,h2,h3{
+h1,h2,h3,h4,h5,h6{
   font-family: "Montserrat", sans-serif;
 }
 
@@ -25,11 +21,11 @@ h4 {
 }
 h5 {
   font-size: 16px;
-  line-height: calc(128px*1.616);
+  line-height: calc(16px*1.616);
 }
 h6 {
   font-size: 8px;
-  line-height: calc(128px*1.616);
+  line-height: calc(8px*1.616);
 }
 
 @media screen and (max-width: 650px) {
@@ -38,8 +34,8 @@ h6 {
     line-height: calc(64px*1.616);
   }
   h2 {
-    font-size: 32px;
-    line-height: calc(32px*1.616);
+    font-size: 48px;
+    line-height: calc(48px*1.616);
   }
 
   h3 {
@@ -54,7 +50,7 @@ h6 {
     font-size: 12px;
     line-height: calc(12px*1.616);
   }
-  h5 {
+  h6 {
     font-size: 8px;
     line-height: calc(8px*1.616);
   }

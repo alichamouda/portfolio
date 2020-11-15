@@ -10,13 +10,31 @@
 
 }
 
+img {
+  height: 250px;
+  border-radius: 50%;
+}
 .text-container {
   width: calc( #{$content-width} - 250px);
   margin-right: 50px;
 }
 
-img {
-  height: 250px;
-  border-radius: 50%;
+@media screen and (max-width: #{$screen-width}){
+  .general-presentation-container {
+    width: 100vw;
+  }
+  img {
+    margin-left: 50px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .text-container {
+    width: 100%;
+    margin-right: 0;
+  }
 }
+
+
+
+
 

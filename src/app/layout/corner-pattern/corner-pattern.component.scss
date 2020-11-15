@@ -1,4 +1,8 @@
+@import "src/styles";
+
 .bottom-pattern {
+  height: 250px;
+  width: 150px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -9,10 +13,30 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: rotate(180deg) scale(-1, 1);
+  transform: rotate(180deg) scale(-1, 1) ;
 }
 .st3 {
   fill: none;
   stroke: #fff;
   stroke-width: 10;
+}
+
+@media screen and (max-width: #{$screen-width-md}){
+  .bottom-pattern {
+    transform: rotate(180deg) scale(.8,.8) translateX(-18px) translateY(-31px);
+  }
+
+  .bottom-pattern-flipped {
+    transform: rotate(180deg) scale(-0.8, .8) translateX(-18px) translateY(-31px);
+  }
+}
+
+@media screen and (max-width: #{$screen-width-sm}){
+  .bottom-pattern {
+    transform: rotate(180deg) scale(.5,.5) translateX(-150px * .5) translateY(-250px * .5);
+  }
+
+  .bottom-pattern-flipped {
+    transform: rotate(180deg) scale(-0.5, .5) translateX(-150px * .5) translateY(-250px * .5);
+  }
 }

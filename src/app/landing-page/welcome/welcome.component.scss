@@ -9,7 +9,35 @@
 
 }
 
+@media screen and (max-width: #{$screen-width}){
+  .welcome-container  {
+    width: 100vw;
+    margin-top: 0;
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: #{$screen-width-sm}){
+  .nav-bar-container {
+    width: 100vw;
+    margin-top: 0;
+    padding: 16px;
+  }
+  .button-container {
+    margin-bottom: 16px;
+
+  }
+  h2{
+    margin-top: 0;
+
+  }
+  button{
+    margin:8px;
+  }
+}
+
 .button-container {
   margin-bottom: 64px;
+  z-index: 5;
 }
 

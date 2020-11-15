@@ -1,9 +1,12 @@
 $screen-width: 1250px;
+$screen-width-sm: 655px;
+$screen-width-md: 800px;
 $content-width: 950px;
 $primary-color: #5BB1E3;
 $secondary-color: #728B99;
 $third-color: #963C3F;
 $fourth-color: #E6E5BA;
+$fourth-color-second: #CCCBA5;
 $accent-color: #E37176;
 
 $shade-one: rgb(255,255,255);
@@ -11,3 +14,24 @@ $shade-two: rgb(180,180,180);
 $shade-three: rgb(120,120,120);
 $shade-four: rgb(88,88,88);
 $shade-five: rgb(22,22,22);
+
+$prefix: "--"; //Prefix string for custom CSS properties
+
+//Merges a variable name with $prefix
+@function custom-property-name($name) {
+  @return $prefix + $name;
+}
+
+// Defines a custom property
+@mixin define-custom-property($name, $value) {
+  #{custom-property-name($name)}: $value;
+}
+
+body {
+  // Append SASS variables which are desired to be accesible:
+  @include define-custom-property('primary-color', $primary-color);
+  @include define-custom-property('third-color', $third-color);
+  @include define-custom-property('secondary-color', $secondary-color);
+  @include define-custom-property('fourth-color', $fourth-color);
+  @include define-custom-property('fourth-color-second', $fourth-color-second);
+}

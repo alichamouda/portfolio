@@ -11,7 +11,31 @@
   display: flex;
 }
 
+
+
 .text-container {
   width: calc( #{$content-width} - 250px);
   margin-right: 50px;
+  margin-bottom: 32px;
+}
+
+
+.tag-container{
+  width: 250px;
+}
+@media screen and (max-width: #{$screen-width}){
+  .project-presentation-container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: #{$content-width}){
+  .text-container {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .tag-container{
+    width: 100%;
+  }
 }
