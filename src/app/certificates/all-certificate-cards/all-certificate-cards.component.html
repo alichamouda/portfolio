@@ -1,8 +1,8 @@
 <div fxLayout="row wrap"  fxLayoutAlign="stretch" class="all-cards-container">
-  <app-certificate-card  *ngFor="let certificate of certificates;let i=index"
+  <app-certificate-card  *ngFor="let certificate of certificates;let i=index" [certificate]="certificate"
 
-  [ngStyle.gt-sm]="{'margin-right':i%3!==2 ? '8px':'0','margin-left':i%3!==0 ? '8px':'0'}"
-                         [ngStyle.lt-md]="{'margin-right':i%2!==1 ? '8px':'0','margin-left':i%2!==0 ? '8px':'0'}"
+  [ngStyle.gt-sm]="{'margin-right':i%3!==2 ? '4px':'0','margin-left':i%3!==0 ? '4px':'0'}"
+                         [ngStyle.lt-md]="{'margin-right':i%2!==1 ? '4px':'0','margin-left':i%2!==0 ? '4px':'0'}"
                          [ngStyle.xs]="{'margin-right':'0','margin-left':'0'}"
   ></app-certificate-card>
 </div>

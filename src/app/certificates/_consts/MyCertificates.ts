@@ -2,23 +2,28 @@ import {CertificateDescription} from "../_models/CertificateDescription";
 
 export const MyCertificates: CertificateDescription[] = [
   {
-    title: "Python in datasource dpaez",
-    type: "Certification",
-    source: "Coursera, University of Duke",
+    title: "Leadership And Managment",
+    type: "3-month Program",
+    source: "University Of Washington",
   },
   {
-    title: "Python in datasource dpaez",
-    type: "Certification",
-    source: "Coursera, University of Duke",
+    title: "Developing Applications with Google Cloud Platform",
+    type: "Specialization",
+    source: "Coursera, Google",
   },
   {
-    title: "Python in datasource dpaez",
+    title: "Aws Fundamentals: Going Cloud-Native",
     type: "Certification",
-    source: "Coursera, University of Duke",
+    source: "Coursera, Amazon Web Service",
   },
   {
-    title: "Python in datasource dpaez",
+    title: "Using Python to interact with the Operating System",
     type: "Certification",
-    source: "Coursera, University of Duke",
+    source: "Coursera, Google",
+  },
+  {
+    title: "Python",
+    type: "Certification",
+    source: "Udemy",
   }
 ];

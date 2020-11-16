@@ -2,8 +2,9 @@
 .volunteering-card {
   background-color: $accent-color;
   padding: 32px;
+  display: flex;
   color: white;
-  width: calc((#{$screen-width}  - 8px*4)/3);
+  width: calc((#{$screen-width}  - 4px*4)/3);
   height: 200px;
   margin-bottom: 8px;
 }

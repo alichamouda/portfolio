@@ -3,8 +3,7 @@
     <h3 class="highlight-accent">
       {{project.title || "Hotel Project"}}
     </h3>
-    <div class="text-block">
-      {{project.description || "This is a description of Hotel Project"}}
+    <div class="text-block" [innerHTML]="project.description || 'This is a description of Hotel Project'">
     </div>
   </div>
   <div class="tag-container" fxLayout="row wrap">

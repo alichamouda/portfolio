@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {CertificateDescription} from "../_models/CertificateDescription";
 
 @Component({
   selector: 'app-certificate-card',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./certificate-card.component.scss']
 })
 export class CertificateCardComponent implements OnInit {
+
+  @Input() certificate: CertificateDescription;
+
 
   constructor() { }
 
