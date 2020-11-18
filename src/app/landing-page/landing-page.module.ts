@@ -10,6 +10,7 @@ import {LayoutModule} from "../layout/layout.module";
 import {CertificatesModule} from "../certificates/certificates.module";
 import {VolunteeringModule} from "../volunteering/volunteering.module";
 import { FooterComponent } from './footer/footer.component';
+import {MatIconModule} from "@angular/material/icon";
 
 
 
@@ -25,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
         LayoutModule,
         CertificatesModule,
         VolunteeringModule,
+        MatIconModule,
     ]
 })
 export class LandingPageModule { }

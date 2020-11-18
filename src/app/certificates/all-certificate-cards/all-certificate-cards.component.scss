@@ -1,11 +1,20 @@
 @import "src/styles";
-.all-cards-container{
-  width: $screen-width;
-  display: flex;
-  padding-top: 8px;
+
+
+.all-cards-container {
+  margin-top: 8px;
 }
-@media screen and (max-width: #{$screen-width}){
-  .all-cards-container{
-    width: 100vw;
-  }
+
+.certificate-card-container{
+  background-color: $fourth-color;
+  padding: 32px;
+  margin-bottom: 8px;
+  color: white;
 }
+
+h4{
+  margin: 0;
+  line-height: 130%;
+}
+
+

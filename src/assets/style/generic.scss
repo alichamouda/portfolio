@@ -1,0 +1,17 @@
+@import "constants";
+
+.center-of-page {
+  display: flex;
+  box-sizing: border-box;
+  width: $screen-width;
+  margin-left: calc((100vw - #{$scroll-bar-width} - #{$screen-width})/2);
+  max-width: 100%;
+}
+
+@media screen and (max-width: #{$screen-width}){
+  .center-of-page  {
+    width: 100vw;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}

@@ -1,10 +1,11 @@
-<div fxLayout="row wrap"  fxLayoutAlign="stretch" class="all-cards-container">
-  <app-certificate-card  *ngFor="let certificate of certificates;let i=index" [certificate]="certificate"
+<div  class="all-cards-container center-of-page " fxLayout="row wrap" fxLayoutAlign="space-between stretch " >
+  <div fxFlex.gt-md="33" fxFlex.lt-lg="49.5" fxFlex.lt-md="100" class="certificate-card-container"
+       *ngFor="let certificate of certificates;let i=index"  >
+    <h4>{{certificate.title}}</h4>
+    <div> {{certificate.type}}</div>
+    <h5> {{certificate.source}}</h5>
+  </div>
 
-  [ngStyle.gt-sm]="{'margin-right':i%3!==2 ? '4px':'0','margin-left':i%3!==0 ? '4px':'0'}"
-                         [ngStyle.lt-md]="{'margin-right':i%2!==1 ? '4px':'0','margin-left':i%2!==0 ? '4px':'0'}"
-                         [ngStyle.xs]="{'margin-right':'0','margin-left':'0'}"
-  ></app-certificate-card>
 </div>
 
 

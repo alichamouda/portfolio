@@ -1,8 +1,8 @@
 @import "src/styles";
 
 .project-presentation-container {
-  width: $screen-width;
   padding: 32px;
+  box-sizing: border-box;
   border-style: solid;
   //margin-top: 8px;
   border-width: 8px;
@@ -23,11 +23,7 @@
 .tag-container{
   width: 250px;
 }
-@media screen and (max-width: #{$screen-width}){
-  .project-presentation-container {
-    width: 100vw;
-  }
-}
+
 
 @media screen and (max-width: #{$content-width}){
   .text-container {

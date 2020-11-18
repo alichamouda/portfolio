@@ -15,6 +15,7 @@
 }
 
 .highlight-accent {
+  box-sizing: content-box;
   margin-top: 0;
   background-color: $accent-color;
   color: white;

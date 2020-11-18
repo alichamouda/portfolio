@@ -14,7 +14,16 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: #{$screen-width}){
+.info-box {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 8px 0;
+}
+
+@media screen and (max-width: #{$screen-width}) {
   .footer-container {
     width: 100vw;
     padding: 16px 32px;

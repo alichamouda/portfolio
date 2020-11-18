@@ -1,12 +1,12 @@
-<div class="project-presentation-container" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign.gt-sm="center center" fxLayoutAlign.lt-md="stretch">
+<div class="center-of-page project-presentation-container" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="center center"  fxLayoutAlign.lt-md="stretch">
   <div class="text-container">
-    <h3 class="highlight-accent">
+    <h3 class="highlight-accent" >
       {{project.title || "Hotel Project"}}
     </h3>
     <div class="text-block" [innerHTML]="project.description || 'This is a description of Hotel Project'">
     </div>
   </div>
-  <div class="tag-container" fxLayout="row wrap">
+  <div class="tag-container" fxLayout="row wrap" fxLayoutAlign="stretch center">
     <span class="tag-shade-four" *ngFor="let tag of project.tags">{{tag}}</span>
   </div>
 </div>

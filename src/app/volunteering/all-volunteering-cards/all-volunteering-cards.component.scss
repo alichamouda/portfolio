@@ -9,3 +9,30 @@
     width: 100vw;
   }
 }
+
+.volunteering-card {
+  background-color: $accent-color;
+  padding: 32px;
+  display: flex;
+  color: white;
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+h4, h5{
+  margin: 0;
+  color: white;
+}
+
+.highlight-shade-one{
+  margin-top: 16px;
+  color: $accent-color;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 600px){
+  .volunteering-card{
+    padding: 16px;
+  }
+}

@@ -4,9 +4,11 @@
 @import "assets/style/header-style";
 @import "assets/style/button";
 @import "assets/style/text-formatting";
-
+@import "assets/style/scroll-bar";
+@import "assets/style/generic";
 html, body {
   min-height: 100%;
+
 }
 
 
@@ -21,6 +23,7 @@ body {
 div {
   margin: 0;
   padding: 0;
+
 }
 
 .underline {

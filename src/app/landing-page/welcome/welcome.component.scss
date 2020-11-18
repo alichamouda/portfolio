@@ -2,24 +2,20 @@
 
 .welcome-container {
   background-color: $primary-color;
-  width: $screen-width;
   padding: 32px;
   position: relative;
   color: $shade-one;
-
 }
 
 @media screen and (max-width: #{$screen-width}){
   .welcome-container  {
-    width: 100vw;
     margin-top: 0;
     padding: 32px;
   }
 }
 
 @media screen and (max-width: #{$screen-width-sm}){
-  .nav-bar-container {
-    width: 100vw;
+  .welcome-container {
     margin-top: 0;
     padding: 16px;
   }

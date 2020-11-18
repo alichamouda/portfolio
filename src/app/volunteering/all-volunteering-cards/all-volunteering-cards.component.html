@@ -1,10 +1,29 @@
-<div fxLayout="row wrap" fxLayoutAlign="stretch" class="all-cards-container">
-  <app-volunteering-card [activity]="activity" *ngFor="let activity of volunteeringActivities;let i=index"
-                         [ngStyle.gt-sm]="{'margin-right':i%3!==2 ? '4px':'0','margin-left':i%3!==0 ? '4px':'0'}"
-                         [ngStyle.lt-md]="{'margin-right':i%2!==1 ? '4px':'0','margin-left':i%2!==0 ? '4px':'0'}"
-                         [ngStyle.xs]="{'margin-right':'0','margin-left':'0'}"
+<div fxLayout="row wrap" fxLayoutAlign="space-between stretch"  class="center-of-page all-cards-container">
+<!--  <app-volunteering-card [activity]="activity" *ngFor="let activity of volunteeringActivities;let i=index"-->
+<!--                                                    [ngStyle.gt-sm]="{'margin-right':i%3!==2 ? '4px':'0','margin-left':i%3!==0 ? '4px':'0'}"-->
+<!--                                                    [ngStyle.lt-md]="{'margin-right':i%2!==1 ? '4px':'0','margin-left':i%2!==0 ? '4px':'0'}"-->
+<!--                                                    [ngStyle.xs]="{'margin-right':'0','margin-left':'0'}"-->
 
-  ></app-volunteering-card>
+<!--&gt;</app-volunteering-card>-->
+
+  <div class="volunteering-card" fxFlex.gt-md="33" fxFlex.lt-lg="49.5" fxFlex.lt-md="100" fxLayout="column" fxLayoutAlign="space-between start"
+       *ngFor="let activity of volunteeringActivities;let i=index">
+
+    <div style="height: 50px;display: flex">
+      <h4 style="line-height: 24px">
+        {{activity.mission}}
+      </h4>
+    </div>
+    <div  style="height: 32px;margin-top: 16px;display: flex">
+      <h5 style="line-height: 16px">
+        {{activity.clubName}}
+      </h5>
+    </div>
+
+    <div class="highlight-shade-one">
+      {{activity.startMonth.slice(0,3) + " " + activity.startYear}} - {{ activity.endMonth.slice(0,3) + " " + activity.endYear}}
+    </div>
+  </div>
 </div>
 
 
