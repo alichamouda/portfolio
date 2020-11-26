@@ -1,0 +1,56 @@
+@import "src/styles";
+
+.feedback-container {
+  background-color: $primary-color;
+  padding: 64px 128px;
+  position: relative;
+  color: $shade-one;
+}
+
+
+.input-container {
+  margin: 12px 0;
+}
+
+input, textarea, select {
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: solid rgba(222,222,222,.5);
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  font-size: 18px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: #{$screen-width}){
+  .feedback-container  {
+    margin-top: 0;
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: #{$screen-width-sm}){
+  .feedback-container {
+    margin-top: 0;
+    padding: 16px;
+  }
+  h2{
+    margin-top: 0;
+
+  }
+  button{
+    margin:8px;
+  }
+}
+
+

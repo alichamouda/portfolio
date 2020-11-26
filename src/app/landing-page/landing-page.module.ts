@@ -11,6 +11,7 @@ import {CertificatesModule} from "../certificates/certificates.module";
 import {VolunteeringModule} from "../volunteering/volunteering.module";
 import { FooterComponent } from './footer/footer.component';
 import {MatIconModule} from "@angular/material/icon";
+import {FeedbackModule} from "../feedback/feedback.module";
 
 
 
@@ -27,6 +28,7 @@ import {MatIconModule} from "@angular/material/icon";
         CertificatesModule,
         VolunteeringModule,
         MatIconModule,
+        FeedbackModule,
     ]
 })
 export class LandingPageModule { }

@@ -1,0 +1,13 @@
+@import "src/styles";
+
+.star-icon {
+  height: 32px;
+  width: 32px;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+}
+
+.star-icon:hover {
+  color: rgba(255, 255, 255, .8);
+}

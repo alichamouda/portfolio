@@ -22,6 +22,11 @@ export const MyCertificates: CertificateDescription[] = [
     source: "Coursera, Google",
   },
   {
+    title: "Google IT Automation With Python",
+    type: "Professional Certification",
+    source: "Coursera ",
+  },
+  {
     title: "Python",
     type: "Certification",
     source: "Udemy",

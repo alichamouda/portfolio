@@ -1,0 +1,10 @@
+<div style="width: 100%;margin-top: 8px" fxLayout="row" fxLayoutGap="16px">
+  <mat-icon class="star-icon"
+            *ngFor="let c of counter(starCount);let i=index"
+            (click)="decreaseStars()">
+    star</mat-icon>
+  <mat-icon class="star-icon"
+            *ngFor="let c of counter(5-starCount);let i=index"
+            (click)="increaseStars()">
+    star_outline</mat-icon>
+</div>

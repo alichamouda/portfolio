@@ -1,0 +1,27 @@
+<div class="center-of-page feedback-container"
+     fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign.gt-sm="stretch center">
+  <div fxFlex.gt-sm="55" fxFlex.lt-md="100">
+    <h2 style="text-align: left;width: 350px">
+      Send your feedback</h2>
+  </div>
+
+  <div fxFlex.gt-sm="45" fxFlex.lt-md="100">
+    <form [formGroup]="feedbackForm">
+      <div class="input-container">
+        <label for="stars"> How much does it deserve ? </label>
+        <app-star-handler [starCount]="starCount" (onStarCountChange)="updateStarCount($event)"></app-star-handler>
+        <input id="stars" formControlName="stars" hidden>
+      </div>
+      <br>
+      <div class="input-container">
+        <label for="name"> Name </label><br>
+        <input placeholder="Enter Name" id="name" type="text" formControlName="name">
+      </div>
+      <div class="input-container">
+        <label for="message"> Excited to read your message </label><br>
+        <textarea placeholder="Feedback" id="message" formControlName="message"></textarea>
+      </div>
+      <button style="margin-top: 16px" type="submit" (click)="sendFeedback()">Submit</button>
+    </form>
+  </div>
+</div>
