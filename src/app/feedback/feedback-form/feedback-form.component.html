@@ -1,5 +1,6 @@
 <div class="center-of-page feedback-container" *ngIf="!isSent"
      fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign.gt-sm="stretch center">
+  <mat-progress-bar *ngIf="isSending" mode="indeterminate" color="accent" style="width: 100%;height: 8px; position: absolute;top: 0;left: 0"></mat-progress-bar>
   <div fxFlex.gt-sm="55" fxFlex.lt-md="100">
     <h2 style="text-align: left;width: 350px">
       Send your feedback</h2>

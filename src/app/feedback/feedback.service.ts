@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {FeedbackModule} from "./feedback.module";
-import {HttpClient, HttpResponse} from "@angular/common/http";
+import {HttpClient, HttpHeaders, HttpResponse} from "@angular/common/http";
 import {FeedbackFormModel} from "./feedback-form.model";
 import {Observable} from "rxjs";
 import {map, tap} from "rxjs/operators";
@@ -11,6 +11,12 @@ import {map, tap} from "rxjs/operators";
 })
 export class FeedbackService {
 
+  optionRequete = {
+    headers: new HttpHeaders({
+      // 'Access-Control-Allow-Origin':'*',
+      'content-type': 'application/json',
+    })
+  };
 
   BASE_URL = "https://xhslnklr59.execute-api.us-east-1.amazonaws.com/Prod"
   userMessages = [
@@ -23,10 +29,9 @@ export class FeedbackService {
 
   post(feedback: FeedbackFormModel): Observable<boolean> {
     return this.http.post(
-      this.BASE_URL, feedback
+      this.BASE_URL, feedback, this.optionRequete
     ).pipe(
-      tap((value) => console.log('Avant : ' + value)),
-      map((response: HttpResponse<any>) =>  response.status < 299)
+      map((response) =>  response['statusCode'] < 299)
     );
   }
 }

@@ -17,7 +17,8 @@ export class FeedbackFormComponent implements OnInit {
     message: new FormControl(),
   });
 
-  isSent = true;
+  isSent = false;
+  isSending = false;
   starCount = 5;
 
   constructor(private feedbackService: FeedbackService) {
@@ -27,6 +28,7 @@ export class FeedbackFormComponent implements OnInit {
   }
 
   async sendFeedback() {
+    this.isSending = true;
     const feedback = this.feedbackForm.value as FeedbackFormModel;
     feedback.stars = "" + this.starCount;
     try {
@@ -35,6 +37,7 @@ export class FeedbackFormComponent implements OnInit {
       console.log("Error occurred");
       this.isSent = false;
     }
+    this.isSending = false;
   }
 
   updateStarCount(starCount: any) {
