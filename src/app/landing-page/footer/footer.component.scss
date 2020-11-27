@@ -9,15 +9,15 @@
 }
 
 .highlight-shade-one {
-  margin-right: 8px;
-  color: #728B99;
+  margin: 0 16px 0 0;
+  color: $secondary-color;
+  width: 32px;
+  height: 20px;
+  text-align: center;
   font-weight: 600;
 }
 
 .info-box {
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
   box-sizing: content-box;
   padding: 0;
   margin: 8px 0;
